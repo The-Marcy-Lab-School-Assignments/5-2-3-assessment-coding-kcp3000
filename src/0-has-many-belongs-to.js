@@ -34,9 +34,8 @@ class ToDoList {
   }
   getCompletedCount() {
     let count = 0
-    const item = new ToDoItem()
-    if (item.isDone === true) {
-      count++
+    for (let item of this.items) {
+      if (item.isDone) count++
     }
     return count
   }

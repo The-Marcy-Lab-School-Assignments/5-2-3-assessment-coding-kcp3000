@@ -5,12 +5,12 @@ const bankAccountFactory = (num) => {
       return num
     },
     add(inc) {
-      let result = num += inc
-      console.log(`$${result} added.`)
+      num += inc
+      console.log(`$${inc} added.`)
     },
     subtract(dec) {
-      let result = num -= dec
-      console.log(`$${result} subtracted.`)
+      num -= dec
+      console.log(`$${dec} subtracted.`)
     }
   }
 };
