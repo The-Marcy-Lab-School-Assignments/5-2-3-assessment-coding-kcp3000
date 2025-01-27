@@ -1,5 +1,5 @@
 const { getId } = require('./utils');
-
+/** FEEDBACK: Great job! Amazing work with this! */
 class ToDoItem {
   constructor(description, priorityLevel, mood) {
     this.id = getId(),
@@ -33,11 +33,6 @@ class ToDoList {
     return [...this.items]
   }
   getCompletedCount() {
-    /** FEEDBACK: The goal for this question is to count how many items have been marked complete from the toDoList.
-     * In your code you are setting a counter which is a great start! 
-     * After that you are creating a new item however, we should instead iterate through the items we already have in our array. 
-     * You are really close!
-     */
     let count = 0
     for (let item of this.items) {
       if (item.isDone) count++
